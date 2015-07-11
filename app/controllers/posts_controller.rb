@@ -6,11 +6,15 @@ class PostsController < ApplicationController
 	end
 
 	def new
-		@post = Post.new
+		# building ou tthe post from the current user
+		@post = current_user.posts.build
 	end
 
 	def create
-		@post = Post.new(post_params)
+
+		# building ou tthe post from the current user
+		# Keep the post_params to permit title: and content:
+		@post = current_user.posts.build(post_params)
 		if @post.save
 			redirect_to @post
 		else

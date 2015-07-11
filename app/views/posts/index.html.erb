@@ -3,9 +3,8 @@
 <p>
 	<h2><%= link_to post.title, post_path(post) %></h2>
 </p>
-<p>
-<%= time_ago_in_words(post.created_at) %> ago | 
+<p> Submitted by: <%= post.user.email %> | 
+<%= time_ago_in_words(post.created_at) %> ago |
 <%= link_to 'Edit', edit_post_path(post) %> | 
 <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
-
 <% end %>
