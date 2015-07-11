@@ -3,17 +3,31 @@
 <head>
   <title>Local</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to 'Home', root_path %>
-<%= link_to 'Create New', new_post_path %>
-<br />
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
-<%= yield %>
+<header class="main-header clearfix">
+	<div class="wrapper">
+		<div id="logo">
+			<p>Forum</p>
+		</div>
+		<div class="buttons">
+			<%= link_to 'Home', root_path %>
+			<%= link_to 'Create New', new_post_path %>
+		</div>
+	</div>
+</header>
 
+<div class="wrapper">
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+</div>
+
+<div class="wrapper">
+	<%= yield %>
+</div>
 </body>
 </html>

@@ -1,0 +1,132 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+ 	background: #EDEFF0;
+ }
+
+.wrapper {
+	width: 60%;
+	max-width: 1140px;
+	margin: 0 auto;
+	p {
+		h2 {
+
+		}
+	}
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+.main-header {
+	width: 100%;
+	margin: 0 auto;
+	background: white;
+	#logo {
+		float: left;
+		p {
+			text-transformation: uppercase;
+			font_wight: 700;
+			letter-spacing: -1px;
+			font-size: 1.2rem;
+		}
+	}
+	.buttons {
+		float: right;
+	}
+}
+
+#posts {
+	background: white;
+	padding: 2em 5%;
+	border-radius: .5rem;
+	.post {
+		.title {
+			margin: 0;
+			a {
+			text-decoration: none;
+	 		color: #559;
+			font-size: 1.2rem;
+
+			}
+		}
+	.datetime {
+		p {
+			padding-top: 5px;
+			padding-bottom: 10px;
+
+			a {
+				margin: 2px;
+				text-decoration: none;
+				color: #559;
+				}
+				border-bottom: 1px solid #d1d1d1;
+			}
+		}
+	}
+	border-bottom: 1px solid #d6d6d6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
