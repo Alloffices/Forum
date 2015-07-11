@@ -53,6 +53,15 @@
 	}
 	.buttons {
 		float: right;
+		a {
+			line-height: 60px;
+			background: #396CAC;
+			padding: .5em 1em;
+			border-radius: 0.2em;
+			color: white;
+			text-decoration: none;
+			font-height: 100;
+		}
 	}
 }
 
@@ -67,13 +76,12 @@
 			text-decoration: none;
 	 		color: #559;
 			font-size: 1.2rem;
-
 			}
 		}
 	.datetime {
 		p {
 			padding-top: 5px;
-			padding-bottom: 10px;
+			padding-bottom: 25px;
 
 			a {
 				margin: 2px;
