@@ -44,9 +44,11 @@
 	background: white;
 	#logo {
 		float: left;
-		p {
+		a {
+			text-decoration: none;
+			color: #396CAC;
 			text-transformation: uppercase;
-			font_wight: 700;
+			font-weight: 700;
 			letter-spacing: -1px;
 			font-size: 1.2rem;
 		}

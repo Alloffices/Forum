@@ -12,11 +12,19 @@
 <header class="main-header clearfix">
 	<div class="wrapper">
 		<div id="logo">
-			<p>Forum</p>
+			<p><%= link_to 'Home', root_path %></p>
 		</div>
 		<div class="buttons">
-			<%= link_to 'Home', root_path %>
+
+		<% if user_signed_in? %>
 			<%= link_to 'Create New', new_post_path %>
+
+		<% else %>
+
+			<%= link_to 'Sign in', new_user_session_path %>
+			<%= link_to 'Sign up', new_user_registration_path %>
+			
+		<% end %>
 		</div>
 	</div>
 </header>
