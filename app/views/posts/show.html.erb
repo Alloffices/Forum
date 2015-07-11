@@ -5,5 +5,12 @@
 </p>
 <%= @post.content %>
 <br />
+<h4> Comments
+<%= @post.comments.count %></h4>
+<%= render @post.comments %>
+
+<p>Reply to thread:</p>
+<%= render "comments/form"%>
+<br />
 <%= link_to 'Edit', edit_post_path(@post) %>
 <%= link_to 'Destroy', root_path, method: :destroy, data: { confirm: 'Are you sure?' } %>
